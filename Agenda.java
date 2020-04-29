@@ -16,16 +16,16 @@ class Agenda{
         }
         
         while(attuale!=null){
-            System.out.printf("Nome:%s\tCognome:%s\tNumeroTel:%s\tEmail:%s\n",attuale.nome,attuale.cognome,attuale.numeroTel,attuale.email);
+            System.out.printf("Nome:%s\tCognome:%s\tNumeroTel:%s\tEmail:%s\n",attuale.nome,attuale.cognome,attuale.nTel,attuale.email);
             attuale=attuale.next;
         }
 
     }
     
-    public void inserimento(String nome, String cognome, String numeroTel, String email){
+    public void inserimento(String nome, String cognome, String nTel, String email){
         Contatto attuale=this.head;
         Contatto app=null;
-        Contatto nuovo=new Contatto(nome,cognome,numeroTel,email);
+        Contatto nuovo=new Contatto(nome,cognome,nTel,email);
         
         while(attuale!=null){
             app=attuale;
