@@ -22,6 +22,7 @@ public class Main
 		    System.out.printf("0=Uscire dal menù\n");
 		    app=t.nextInt();
 		    switch(app){
+				    
 		        case(1):
 		            System.out.printf("Inserisci il nome\n");
 		            nome=tastiera.nextLine();
