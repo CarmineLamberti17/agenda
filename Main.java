@@ -9,7 +9,7 @@ public class Main
 		
 		String nome;
 		String cognome;
-		String numeroTel;
+		String nTel;
 		String email;
 		int app;
 		
@@ -23,31 +23,43 @@ public class Main
 		    app=t.nextInt();
 		    switch(app){
 		        case(1):
-		            System.out.printf("Inserire il nome\n");
+		            System.out.printf("Inserisci il nome\n");
 		            nome=tastiera.nextLine();
-		            System.out.printf("Inserire il cognome\n");
+		            System.out.printf("Inserisci il cognome\n");
 		            cognome=tastiera.nextLine();
-		            System.out.printf("Inserire il numero telefonico\n");
-		            numeroTel=tastiera.nextLine();
-		            System.out.printf("Inserire l'email\n");
+		            System.out.printf("Inserisci il numero telefonico\n");
+		            nTel=tastiera.nextLine();
+		            System.out.printf("Inserisci l'email\n");
 		            email=tastiera.nextLine();
-		            uso.inserimento(nome,cognome,numeroTel,email);
+		            uso.inserimento(nome,cognome,nTel,email);
 		            break;
+				    
+				    
 		        case(2):
-		            System.out.printf("Inserire il nome\n");
+				    
+		            System.out.printf("Inserisci il nome\n");
 		            nome=tastiera.nextLine();
-		            System.out.printf("Inserire il cognome\n");
+		            System.out.printf("Inserisci il cognome\n");
 		            cognome=tastiera.nextLine();
 		            uso.rimozione(nome,cognome);
 		            break;
+				    
+				    
+				    
 		        case(3):
-		            System.out.printf("Inserire il nome\n");
+				    
+				    
+				    
+		            System.out.printf("Inserisci il nome\n");
 		            nome=tastiera.nextLine();
 		            System.out.printf("Inserire il cognome\n");
 		            cognome=tastiera.nextLine();
 		            uso.ricerca(nome,cognome);
 		            break;
+				    
+				    
 		        case(4):
+				    
 		            uso.stampa();
 		            break;
 		        default:
